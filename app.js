@@ -5,7 +5,7 @@ GAME RULES:
 - In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
 - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
-- The first player to reach 100 points on GLOBAL score wins the game
+- The first player to reach 20 points on GLOBAL score wins the game
 
 */
 
@@ -147,6 +147,42 @@ function init() {
     
     
 }
+
+var modalBtn = document.querySelector('.ins');
+var modalBg = document.querySelector('.modal-bg');
+    
+
+
+modalBtn.addEventListener('click', function(){
+//    alert('button clicked');
+    modalBg.classList.add('bg-active'); 
+});
+
+document.querySelector('.modal-close').addEventListener('click',function(){
+    modalBg.classList.remove('bg-active');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
